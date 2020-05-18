@@ -50,23 +50,16 @@ const StoreIndex = ({location}) => {
   return (
     <Layout location={location}>
       <SEO title={siteTitle} />
-      <Header
-        as="h3"
-        icon
-        textAlign="center"
+      <h1
         style={{
-          marginBottom: '2em',
+          fontSize: '5rem',
+          fontWeight: 100,
+          textAlign: 'center',
+          letterSpacing: '1rem',
         }}
       >
-        <Header.Content
-          style={{
-            width: '60%',
-            margin: '0 auto',
-          }}
-        >
-          <Image src={logo} alt="logo" />
-        </Header.Content>
-      </Header>
+        aurina<span style={{color: 'gold'}}>⬡</span>
+      </h1>
       <ProductList products={filterProductsWithoutImages} />
     </Layout>
   )
